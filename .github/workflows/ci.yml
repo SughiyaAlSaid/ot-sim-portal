@@ -18,13 +18,13 @@ steps:
 - name: Checkout code
 uses: actions/checkout@v3
 # Step 2: Install Node.js so we can run test.js
-- name: Setup Node.js
+-name: Setup Node.js
 uses: actions/setup-node@v3
 with:
 node-version: '18'
 # Step 3: Run the phone validation tests
-- name: Run phone validation tests
+-name: Run phone validation tests
 run: node test.js
 # Step 4: Confirm completion
-- name: Pipeline complete
+-name: Pipeline complete
 run: echo " All tests passed — SIM portal phone validation verified"
